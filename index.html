@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Psychic Game</title>
+  </head>
+  <body>
+    <h1>Guess What Number the Computer is Thinking!!</h1>
+
+    <div id="game">
+    
+      </div>
+
+
+    <script type="text/javascript">
+    
+      var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+      var wins = 0;
+      var losses = 0;
+      var totalGuess = 9;
+      var guessCount = 0;
+
+      document.onkeyup = function(event) {
+        var userGuess = event.key;
+        var computerGuess = options[Math.floor(Math.random() * options.length)];
+
+
+      if (userGuess === computerGuess){
+        wins++;
+        totalGuess--;
+        guessCount++;
+      }
+
+      else if (userGuess !== computerGuess){
+        losses++;
+        totalGuess--;
+        guessCount++;
+      }    
+
+      else if (totalGuess < 0) {
+        
+      }
+
+
+
+      var updateWins = '<p>Wins: ' + wins +"</p>";
+      var updateLosses = '<p>Losses: ' + losses +"</p>";
+      var updateTotalGuess = '<p>Number of Guesses Left: ' + totalGuess +"</p>";
+      var updateGuessCount = '<p>Number of Guesses so far: ' + guessCount + "</p>";
+
+      var gameDiv = document.getElementById("game");
+
+      gameDiv.innerHTML = updateWins + updateLosses + updateTotalGuess + updateGuessCount;
+
+
+      };
+
+
+
+
+    </script>
+
+
+  </body>
+</html>
