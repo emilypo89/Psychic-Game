@@ -2,7 +2,7 @@
 var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var wins = 0;
 var losses = 0;
-var totalGuess = 9;
+var totalGuess = 10;
 var guessCount = 0;
 var displayGuess = [];
   
@@ -43,7 +43,7 @@ gameDiv.innerHTML = updateWins + updateLosses + updateTotalGuess + updateGuessCo
 }
 
 function reset() {
-  totalGuess = 9;
+  totalGuess = 10;
   guessCount = 0;
   displayGuess = [];
 }
