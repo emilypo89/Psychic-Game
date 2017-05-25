@@ -15,25 +15,18 @@ document.onkeyup = function(event) {
 
 if (userGuess === computerGuess){
   wins++;
-  totalGuess--;
-  guessCount++;
+  reset();
 }
 
 else if (userGuess !== computerGuess){
   totalGuess--;
   guessCount++;
-  // userGuess.push(displayGuess);
 }    
 
-if (totalGuess < 0) {
+if (totalGuess < 1) {
   losses++;
-  guessCount;
-  totalGuess;
+  reset();
 }
-
-
-
-
 
 var updateWins = '<p>Wins: ' + wins +'</p>';
 var updateLosses = '<p>Losses: ' + losses +'</p>';
@@ -47,5 +40,11 @@ var gameDiv = document.getElementById("game");
 gameDiv.innerHTML = updateWins + updateLosses + updateTotalGuess + updateGuessCount + updateDisplayGuess;
 
 
+}
+
+function reset() {
+  totalGuess = 9;
+  guessCount = 0;
+  displayGuess = [];
 }
      
