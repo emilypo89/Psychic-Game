@@ -3,17 +3,44 @@
   <head>
     <title>Psychic Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
   </head>
 
   <body>
-    <h1>Guess What Number the Computer is Thinking!!</h1>
+  <!-- jumbotron header -->
+  <div class="jumbotron">
+  <div class="container">
+    <h1>Psychic Game</h1>
+    <br>
+    <h3>Can you guess what number the computer is thinking?</h3>
+      <ul>
+        <li>Type your guess and see if you can win!</li>
+      </ul>
+  </div>
+</div>
+<!-- game container -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <!-- game area -->
+    <div class="col-md-8">
+      <!-- game connected to JS file -->
+      <div id="game"></div>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
 
-    <div id="game">
-    
-      </div>
+<div class="navbar navbar-default navbar-fixed-bottom" id="footer">
+    <div class="container">
+      <h6>Copyright © 2017 Emily Polansky</h6>
+    </div>
+</div>
 
 
   </body>
