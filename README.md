@@ -11,7 +11,7 @@ The user is notified if they are correct or incorrect.
 
 The user is given 10 tries to guess the computer's number before the computer generates a new number.
 
-![psychic](./assets/images/psychic.png)
+![psychic](./assets/images/psychicImage.png)
 
 
 ## Languages and Packages Used
